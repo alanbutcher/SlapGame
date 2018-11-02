@@ -6,11 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Slap Game</title>
   <link rel="stylesheet" href="game.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 </head>
 <body>
-  
+<header><span>Health:
+  <span id="health">--</span>
+</span></header>
+
+  <div class="container">
+    <div class="row" id='target'>
+      <img src="//placehold.it/200x200">
+    </div>
+  </div>
 
 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <button onclick="slap()">Slap</button>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="game.js"></script>
