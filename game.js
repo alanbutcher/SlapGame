@@ -1,29 +1,33 @@
-let health = 100
-let targetName = 'Thanos'
-let hits = 0
+let target = {
+  targetName: 'Thanos',
+  health: 100,
+  hits: 0
+}
+
+
 
 
 function slap() {
-  health--;
-  hits++;
+  target.health--;
+  target.hits++;
   //alert(health);
   update()
 }
 function punch() {
-  health -= 5;
-  hits++;
+  target.health -= 5;
+  target.hits++;
   update()
 }
 function kick() {
-  health -= 10;
-  hits++;
+  target.health -= 10;
+  target.hits++;
   update()
 }
 
 
 function update() {
-  document.getElementById('health').innerText = health.toString()
-  document.getElementById('Thanos').innerText = targetName
-  document.getElementById('hits').innerText = hits.toString()
+  document.getElementById('health').innerText = target.health.toString()
+  document.getElementById('Thanos').innerText = target.targetName
+  document.getElementById('hits').innerText = target.hits.toString()
 }
 update()
