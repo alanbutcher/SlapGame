@@ -14,7 +14,7 @@
 <body>
   <div class="container-fluid bg-marvel">
     <div class="row">
-      <div class="col-3 score-buttons">
+      <div class="col-2 score-buttons">
         <span>Health:
           <span id='health'>--</span>
         </span>
@@ -27,27 +27,25 @@
           <span id='hits'>--</span>
         </span>
       </div>
-      <div class="row">
-        <div class="col-8 slap-buttons">
-        <button onclick="slap()">Slap</button>
-        <button onclick="punch()">Punch</button>
-        <button onclick="kick()">Kick</button>
+      <!--<div class="row">-->
+        <div class="col-5 slap-buttons">
+        <button type="button" class="btn btn-secondary" onclick="slap()">Slap</button>
+        <button type="button" class="btn btn-secondary" onclick="punch()">Punch</button>
+        <button type="button" class="btn btn-secondary" onclick="kick()">Kick</button>
         </div>
-      </div>
-          <div class="row" id='items'>
-            <button onclick="givePowerStone()">Power Stone</button>
-            <button onclick="giveRealityStone()">Reality Stone</button>
-            <button onclick="giveTimeStone()">Time Stone</button>
+      <!--</div>-->
+          <!--<div class="row" id='items'>-->
+            <div class="col-5 power-buttons" id="items">
+            <button type="button" class="btn btn-warning" onclick="giveMindStone()">Mind Stone</button>
+            <button type="button" class="btn btn-danger" onclick="giveRealityStone()">Reality Stone</button>
+            <button type="button" class="btn btn-success" onclick="giveTimeStone()">Time Stone</button>
           </div>
     </div>
-  <div class="row" id='target'>
-    <div class="col-6 d-flex justify-content-center align-end">
-      <img src="http://oi297.photobucket.com/albums/mm211/thezonzy/thanos.gif" id="target-pic">
+    <div class="row" id='target'>
+      <div class="col-6 d-flex justify-content-center align-end">
+        <img src="http://oi297.photobucket.com/albums/mm211/thezonzy/thanos.gif" id="target-pic">
+      </div>
     </div>
-  </div>
-
-
- 
   </div>
   
   

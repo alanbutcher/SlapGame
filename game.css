@@ -12,6 +12,7 @@
   color: white;
   font-size: 200%;
   font-weight: 300;
+  
 }
 
 #target-pic {
@@ -22,7 +23,10 @@
 }
 
 .slap-buttons {
- display: flex;
- align-content: space-between;
- border-bottom-left-radius: 50%;
+font-family: 'Permanent Marker', cursive;
+}
+
+.power-buttons {
+  font-family: 'Permanent Marker', cursive;
+
 }

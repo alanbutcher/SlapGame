@@ -7,13 +7,13 @@ let target = {
 }
 
 let items = {
-  powerStone: { name: 'Power Stone', modifier: 2, description: "Don't let it touch the ground!" },
+  mindStone: { name: 'Mind Stone', modifier: 2, description: "Don't let it touch the ground!" },
   realityStone: { name: 'Reality stone', modifier: 3, description: 'Wait, say what?' },
   timeStone: { name: 'Time stone', modifier: 4, description: 'Come back with me, Marty!'}
 }
 
-function givePowerStone() {
-  target.items.push(items.powerStone);
+function giveMindStone() {
+  target.items.push(items.mindStone);
 }
 
 function giveRealityStone() {
