@@ -8,51 +8,56 @@
   <link rel="stylesheet" href="game.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid bg-marvel">
-    <span>Health:
-    <span id='health'>--</span>
-    </span>
-    <br>
-      <span>Target:
-        <span id='Thanos'>--</span>
-      </span>
-      <br>
+  <div class="container-fluid bg-marvel">
+    <div class="row">
+      <div class="col-3 score-buttons">
+        <span>Health:
+          <span id='health'>--</span>
+        </span>
+        <br>
+        <span>Target:
+          <span id='Thanos'>--</span>
+        </span>
+        <br>
         <span>Hits:
           <span id='hits'>--</span>
         </span>
-  </header>
+      </div>
+    </div>
+  <div class="row" id='target'>
+    <div class="col-6 d-flex justify-content-center align-end">
+      <img src="http://oi297.photobucket.com/albums/mm211/thezonzy/thanos.gif" id="target-pic">
+    </div>
+  </div>
+  
+  <div class="row" id='items'>
+    <button onclick="givePowerStone()">Power Stone</button>
+    <button onclick="giveRealityStone()">Reality Stone</button>
+    <button onclick="giveTimeStone()">Time Stone</button>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <button onclick="slap()">Slap</button>
+      <button onclick="punch()">Punch</button>
+      <button onclick="kick()">Kick</button>
+    </div>
+  </div>
+  </div>
+  
 
   
   
-  <div class="container">
-    <div class="row" id='target'>
-      <img src="http://oi297.photobucket.com/albums/mm211/thezonzy/thanos.gif">
-    </div>
+ 
   
   
-  <div class="container">
-    <div class="row" id='items'>
-      <button onclick="givePowerStone()">Power Stone</button>
-      <button onclick="giveRealityStone()">Reality Stone</button>
-      <button onclick="giveTimeStone()">Time Stone</button>
-    </div>
-  </div>
   
-  
-  <footer>
-    <div class="container">
-      <div class="row">
-        <button onclick="slap()">Slap</button>
-        <button onclick="punch()">Punch</button>
-        <button onclick="kick()">Kick</button>
-      </div>
-    </div>
-  </div>
-  </footer>
+ 
+ 
   
 
   <script src="game.js"></script>
