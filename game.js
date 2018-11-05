@@ -12,9 +12,16 @@ let items = {
   timeStone: { name: 'Time stone', modifier: 4, description: 'Come back with me, Marty!'}
 }
 
-function giveStone() {
-  items.push(target.items);
-  
+function givePowerStone() {
+  target.items.push(items.powerStone);
+}
+
+function giveRealityStone() {
+  target.items.push(items.realityStone);
+}
+
+function giveTimeStone() {
+  target.items.push(items.timeStone);
 }
 
 function addMods() {
