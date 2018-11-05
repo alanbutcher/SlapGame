@@ -33,24 +33,6 @@ function addMods() {
   target.totalMods = out
 }
 
-// guard
-// function item(name, modifier, description) {
-//   this.name = name;
-//   this.modifier = modifier;
-//   this.description = description;
-//   update()
-// }
-//guard
-
-// guard
-// function giveItem () {
-//   let template = ``
-//   for (let item = target.items) {
-//     template += `<button type="button" class="btn" onclick="giveItem('` + item + `')">` + item + `</button>`
-//   }
-//   document.getElementById('items').innerHTML = template 
-// }
-// guard
 
 function slap() {
   addMods()
